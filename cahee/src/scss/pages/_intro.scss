@@ -1,0 +1,86 @@
+.intro {
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include breakpoint($mobile-bp) {
+        background-position: 56% 0;
+    }
+
+    .container {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    &__holder {
+        max-width: calc(100% / 3);
+
+        @include breakpoint($mobile-bp) {
+            max-width: 60%;
+        }
+    }
+
+    &__title {
+        font-size: 60px;
+        font-weight: 900;
+        color: $text-black;
+        margin-bottom: 30px;
+
+        @include breakpoint($tablet-bp) {
+            font-size: 40px;
+        }
+
+        @include breakpoint($mobile-bp) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__text {
+        margin-bottom: 30px;
+
+        @include breakpoint($mobile-bp) {
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 17px;
+            font-weight: 300;
+            line-height: 27px;
+            color: $text-black;
+
+            @include breakpoint($mobile-bp) {
+                font-size: 14px;
+                line-height: 22px;
+
+            }
+        }
+    }
+
+    &__scroll-holder {
+        max-width: 24px;
+        position: absolute;
+        bottom: 70px;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: all .2s linear;
+
+        svg {
+            width: 100%;
+        }
+
+        @include breakpoint($mobile-bp) {
+            max-width: 20px;
+            bottom: 40px;
+        }
+
+        & g {
+            fill: $text-black;
+        }
+
+        &:hover g {
+            fill: $text-gray;
+        }
+    }
+}

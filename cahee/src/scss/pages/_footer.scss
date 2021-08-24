@@ -1,0 +1,86 @@
+.footer {
+    background-color: #262626;
+    padding: 30px 0;
+
+    @include breakpoint($mobile-bp) {
+        padding: 15px 0 10px;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+
+        @media screen and (max-width: 520px) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__col {
+        color: #b9b9b9;
+        align-self: center;
+        margin: 0 5px 5px;
+
+        @media screen and (max-width: 520px) {
+            justify-content: center;
+            width: 100%;
+            text-align: center;
+        }
+
+        &:nth-child(2) {
+            @media screen and (max-width: 520px) {
+                order: -1;
+            }
+        }
+    }
+
+    &__copyright {
+        font-size: 16px;
+        font-weight: 300;
+
+        @include breakpoint($mobile-bp) {
+            font-size: 14px;
+        }
+
+        @media screen and (max-width: 520px) {
+            font-size: 12px;
+        }
+    }
+
+    &__cahee {
+        font-size: 25px;
+        font-family: 'Pacifico', cursive;
+        font-weight: 1;
+        transition: all .2s linear;
+
+        @include breakpoint($mobile-bp) {
+            font-size: 22px;
+        }
+
+        &:hover {
+            color: #e2e2e2;
+        }
+    }
+
+    &__with-love {
+        font-size: 15px;
+        font-weight: 300;
+        transition: all .2s linear;
+
+        @include breakpoint($mobile-bp) {
+            font-size: 13px;
+        }
+
+        @media screen and (max-width: 520px) {
+            font-size: 11px;
+        }
+
+        &:hover {
+            color: #e2e2e2;
+        }
+
+        span {
+            font-weight: 700;
+            color: #ff2b58;
+        }
+    }
+}

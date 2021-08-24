@@ -1,0 +1,198 @@
+.contact {
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0 120px;
+
+    @include breakpoint($tablet-bp) {
+        padding: 75px 0 90px;
+    }
+
+    @include breakpoint($mobile-bp) {
+        padding: 40px 0 30px;
+    }
+
+    &__title-holder {
+        max-width: 370px;
+        text-align: center;
+        margin: 0 auto 45px;
+    
+        @include breakpoint($mobile-bp) {
+            margin: 0 auto 15px;
+        }
+    }
+
+    &__title {
+        font-size: 90px;
+        font-weight: 700;
+        line-height: 1;
+        margin-bottom: 50px;
+
+        @include breakpoint($tablet-bp) {
+            font-size: 75px;
+            margin-bottom: 20px;
+        }
+    
+        @include breakpoint($mobile-bp) {
+            font-size: 60px;
+        }
+    }
+
+    &__subtitle {
+        font-size: 17px;
+        font-weight: 300;
+        line-height: 25px;
+
+        @include breakpoint($tablet-bp) {
+            font-size: 15px;
+            line-height: 23px;
+        }
+    
+        @include breakpoint($mobile-bp) {
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
+
+    &__flex-row {
+        display: flex;
+        justify-content: space-between;
+
+        @include breakpoint($mobile-bp) {
+            flex-direction: column;
+        }
+    }
+
+    &__col {
+        width: calc((100% / 12) * 5);
+    
+        @include breakpoint($mobile-bp) {
+            width: 70%;
+        }
+
+        @media screen and (max-width: 500px) {
+            width: 100%;
+        }
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+
+        @include breakpoint($mobile-bp) {
+            margin: 0 auto 15px;
+        }
+
+        
+    }
+
+    &__form-item {
+        font-size: 15px;
+        font-weight: 700;
+        background-color: rgba(0, 196, 196);
+        color: #fff;
+        opacity: .5;
+        padding: 20px;
+        margin: 0 0 15px;
+        transition: all .2s linear;
+
+        @include breakpoint($mobile-bp) {
+            padding: 15px;
+            margin: 0 0 10px;
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+        &::placeholder,
+        &::-webkit-input-placeholder {
+            color: #fff;
+            font-weight: 300;
+        }
+
+        &:last-child {
+            margin: 0;
+        }
+
+        &:hover {
+            background-color: rgba(0, 196, 196);
+            opacity: 1;
+        }
+
+        &:focus {
+            background-color: rgba(0, 196, 196);
+            border-left: 5px solid #355b82;
+            opacity: 1;
+        }
+
+        &_textarea {
+            resize: none;
+            height: 255px;
+
+            @include breakpoint($mobile-bp) {
+                height: 155px;
+            }
+        }
+    }
+
+    &__info {
+
+        @include breakpoint($mobile-bp) {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        @media screen and (max-width:500px) {
+            flex-direction: column;
+        }
+    }
+
+    &__info-item {
+        margin-bottom: 15px;
+
+        @include breakpoint($mobile-bp) {
+            width: calc(100% / 3);
+            padding: 0 15px;
+            margin: 0;
+        }
+
+        @media screen and (max-width:500px) {
+            width: 100%;
+            margin: 0 0 10px;
+        }
+
+        &:last-child {
+            margin: 0;
+        }
+    }
+
+    &__info-title {
+        font-size: 17px;
+        font-weight: 700;
+        line-height: 1;
+        margin-bottom: 10px;
+
+        @include breakpoint($mobile-bp) {
+            margin: 0;
+            font-size: 12px;
+        }
+    }
+
+    &__info-link {
+        display: inline;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 1;
+        color: inherit;
+        transition: color .2s linear;
+
+        @include breakpoint($mobile-bp) {
+            font-size: 14px;
+
+        }
+
+        &:hover {
+            color: rgba(0, 196, 196);
+        }
+    }
+}
