@@ -3,7 +3,8 @@
 @import 'vars';
 @import 'mixins';
 
-@import 'blocks/index';
+@import 'pages/home/index';
+@import 'blocks/footer';
 
 * {
     padding: 0;
@@ -101,4 +102,11 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
     margin: 0;
+}
+
+.container {
+    max-width: 930px;
+    padding: 0 15px;
+    width: 100%;
+    margin: 0 auto;
 }

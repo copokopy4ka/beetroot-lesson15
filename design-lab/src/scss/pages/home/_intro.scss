@@ -1,0 +1,116 @@
+.intro {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 80% 50%;
+    min-height: 100vh;
+    padding: 50px 0 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+    @include respond-to ('tablet') {
+        background-position: 50% 50%;
+        padding: 100px 0 50px;
+    }
+
+    @include respond-to ('laptop') {
+        padding: 120px 0 60px;
+    }
+
+    @include respond-to ('desktop') {
+        padding: 285px 0 115px;
+
+        .container {
+            height: 100%;
+        }
+    }
+
+    &__logo {
+        display: inline-block;
+        font-size: 56px;
+        color: $text-white;
+        margin: 0 0 30px;
+
+        @include respond-to ('tablet') {
+            font-size: 60px;
+            margin: 0 0 40px;
+        }
+
+        @include respond-to ('laptop') {
+            font-size: 62px;
+            margin: 0 0 55px;
+        }
+
+        @include respond-to ('desktop') {
+            font-size: 72px;
+            margin: 0 0 90px;
+        }
+    }
+
+    &__title-holder {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        font-size: 32px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $text-white;
+        letter-spacing: .16em;
+        margin: 0 0 20px;
+
+        @include respond-to ('tablet') {
+            font-size: 40px;
+        }
+
+        @include respond-to ('laptop') {
+            font-size: 48px;
+            margin: 0 0 35px;
+        }
+
+        @include respond-to ('desktop') {
+            font-size: 54px;
+            margin: 0 0 55px;
+        }
+    }
+
+    &__subtitle {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: .06em;
+        color: $text-white;
+        text-transform: uppercase;
+
+        @include respond-to ('tablet') {
+            font-size: 13px;
+            line-height: 20px;
+        }
+
+        @include respond-to ('laptop') {
+            font-size: 14px;
+            line-height: 24px;
+        }
+
+        @include respond-to ('desktop') {
+            font-size: 15px;
+            line-height: 28px;
+        }
+    }
+
+    &__scroll {
+        font-size: 24px;
+        color: $text-white;
+
+        @include respond-to ('tablet') {
+            font-size: 30px;
+        }
+
+        @include respond-to ('desktop') {
+            font-size: 38px;
+        }
+    }
+}
