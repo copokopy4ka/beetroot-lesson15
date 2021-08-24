@@ -1,0 +1,66 @@
+.about {
+    padding: 50px 0 50px;
+
+    @include respond-to('tablet') {
+        padding: 100px 0 100px;
+    }
+
+    @include respond-to('desktop') {
+        padding: 160px 0 160px;
+    }
+
+    &__holder {
+        padding: 30px 50px 0;
+        border: 1px solid $text-dark;
+        text-align: center;
+        position: relative;
+
+        @include respond-to('tablet') {
+            padding: 50px 130px 10px;
+        }
+    
+        @include respond-to('desktop') {
+            padding: 70px 160px 20px;
+        }
+    }
+
+    &__title {
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: .16em;
+        padding: 10px 30px;
+        text-transform: uppercase;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        background-color: #fff;
+        transform: translate(-50%, -50%);
+
+        @include respond-to('tablet') {
+            font-size: 26px;
+            padding: 15px 50px;
+        }
+    
+        @include respond-to('desktop') {
+            padding: 25px 100px;
+        }
+    }
+
+    &__text {
+        p {
+            font-size: 12px;
+            line-height: 18px;
+            padding: 0 0 15px;
+
+            @include respond-to('tablet') {
+                font-size: 14px;
+                line-height: 22px;
+            }
+        
+            @include respond-to('desktop') {
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+    }
+}
