@@ -72,7 +72,7 @@
 
         @include breakpoint($mobile-bp) {
             max-width: 20px;
-            bottom: 40px;
+            bottom: 15px;
         }
 
         & g {
