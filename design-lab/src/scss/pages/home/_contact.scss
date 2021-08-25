@@ -1,26 +1,22 @@
-.about {
-    padding: 50px 0 50px;
+.contact {
+    padding: 40px 0 40px;
 
     @include respond-to('tablet') {
-        padding: 100px 0 100px;
+        padding: 75px 0 50px;
     }
 
     @include respond-to('desktop') {
-        padding: 160px 0 160px;
+        padding: 90px 0 60px;
     }
 
     &__holder {
-        padding: 30px 50px 0;
+        padding: 50px 30px;
         border: 2px solid $text-dark;
         text-align: center;
         position: relative;
 
         @include respond-to('tablet') {
-            padding: 50px 130px 10px;
-        }
-    
-        @include respond-to('desktop') {
-            padding: 70px 160px 20px;
+            padding: 50px 130px 50px;
         }
     }
 
@@ -52,19 +48,19 @@
         p {
             font-size: 12px;
             line-height: 18px;
-            padding: 0 0 15px;
+            padding: 0 0 20px;
             color: $text-dark;
 
             @include respond-to('tablet') {
                 font-size: 14px;
                 line-height: 22px;
-                padding: 0 0 20px;
+                padding: 0 0 35px;
             }
         
             @include respond-to('desktop') {
                 font-size: 16px;
                 line-height: 24px;
-                padding: 0 0 30px;
+                padding: 0 0 45px;
             }
         }
     }

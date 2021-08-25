@@ -1,12 +1,12 @@
 .what-we-do {
-    padding: 30px 0 30px;
+    padding: 80px 0 50px;
 
     @include respond-to('tablet') {
-        padding: 50px 0 50px;
+        padding: 100px 0 60px;
     }
 
     @include respond-to('desktop') {
-        padding: 120px 0 115px;
+        padding: 120px 0 70px;
     }
 
     &__holder {
@@ -16,11 +16,11 @@
         position: relative;
 
         @include respond-to('tablet') {
-            padding: 50px 130px 10px;
+            padding: 90px 130px 10px;
         }
     
         @include respond-to('desktop') {
-            padding: 70px 160px 20px;
+            padding: 120px 160px 20px;
         }
     }
 
@@ -38,11 +38,12 @@
         transform: translate(-50%, -50%);
 
         @include respond-to('tablet') {
-            font-size: 26px;
+            font-size: 30px;
             padding: 15px 50px;
         }
     
         @include respond-to('desktop') {
+            font-size: 34px;
             padding: 25px 100px;
         }
     }
@@ -59,6 +60,7 @@
         color: $text-dark;
         font-size: 42px;
         margin: 0 0 15px;
+        transition: color .15s linear;
 
         @include respond-to('tablet') {
             font-size: 60px;
@@ -77,15 +79,34 @@
         color: $text-dark;
         letter-spacing: .16em;
         text-transform: uppercase;
-        margin: 0 0 15px;
+        transition: color .15s linear;
 
         @include respond-to('tablet') {
             font-size: 16px;
-            margin: 0 0 25px;
         }
     
         @include respond-to('desktop') {
             font-size: 20px;
+        }
+    }
+
+    &__link {
+        display: inline-block;
+        margin: 0 0 15px;
+
+        &:hover .what-we-do__img {
+            color: $hover-color;
+        }
+
+        &:hover .what-we-do__item-title {
+            color: $hover-color;
+        }
+
+        @include respond-to('tablet') {
+            margin: 0 0 25px;
+        }
+    
+        @include respond-to('desktop') {
             margin-bottom: 40px;
         }
     }

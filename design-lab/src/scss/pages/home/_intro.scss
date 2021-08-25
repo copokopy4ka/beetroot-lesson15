@@ -32,6 +32,11 @@
         font-size: 56px;
         color: $text-white;
         margin: 0 0 30px;
+        transition: color .2s linear;
+
+        &:hover {
+            color: $hover-color;
+        }
 
         @include respond-to ('tablet') {
             font-size: 60px;
@@ -104,6 +109,11 @@
     &__scroll {
         font-size: 27px;
         color: $text-white;
+        transition: color .2s linear;
+
+        &:hover {
+            color: $text-dark;
+        }
 
         @include respond-to ('tablet') {
             font-size: 30px;

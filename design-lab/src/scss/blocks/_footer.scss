@@ -1,0 +1,52 @@
+.footer {
+    padding: 0 0 30px;
+
+    @include respond-to('tablet') {
+        padding: 0 0 50px;
+    }
+
+    @include respond-to('desktop') {
+        padding: 0 0 65px;
+    }
+
+    &__holder {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &__logo {
+        font-size: 24px;
+        margin-right: 20px;
+        color: $text-dark;
+        transition: color .2s linear;
+
+        &:hover {
+            color: $hover-color;
+        }
+
+        @include respond-to('tablet') {
+            font-size: 30px;
+            margin-right: 28px;
+        }
+    
+        @include respond-to('desktop') {
+            font-size: 40px;
+            margin-right: 36px;
+        }
+    }
+
+    &__copyright {
+        font-size: 10px;
+        font-weight: 400;
+
+        @include respond-to('tablet') {
+            font-size: 12px;
+        }
+    
+        @include respond-to('desktop') {
+            font-size: 14px;
+        }
+    }
+}
