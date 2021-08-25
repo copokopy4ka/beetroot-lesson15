@@ -1,16 +1,16 @@
-.about {
-    padding: 50px 0 50px;
+.what-we-do {
+    padding: 30px 0 30px;
 
     @include respond-to('tablet') {
-        padding: 100px 0 100px;
+        padding: 50px 0 50px;
     }
 
     @include respond-to('desktop') {
-        padding: 160px 0 160px;
+        padding: 120px 0 115px;
     }
 
     &__holder {
-        padding: 30px 50px 0;
+        padding: 50px 50px 0;
         border: 2px solid $text-dark;
         text-align: center;
         position: relative;
@@ -25,7 +25,7 @@
     }
 
     &__title {
-        font-size: 18px;
+        font-size: 20px;
         font-weight: 700;
         letter-spacing: .16em;
         color: $text-dark;
@@ -47,23 +47,63 @@
         }
     }
 
+    &__item {
+        padding: 0 0 30px;
+
+        @include respond-to('tablet') {
+            padding: 0 0 40px;
+        }
+    }
+
+    &__img {
+        color: $text-dark;
+        font-size: 42px;
+        margin: 0 0 15px;
+
+        @include respond-to('tablet') {
+            font-size: 60px;
+            margin: 0 0 25px;
+        }
+    
+        @include respond-to('desktop') {
+            font-size: 80px;
+            margin-bottom: 40px;
+        }
+    }
+
+    &__item-title {
+        font-size: 13px;
+        font-weight: 700;
+        color: $text-dark;
+        letter-spacing: .16em;
+        text-transform: uppercase;
+        margin: 0 0 15px;
+
+        @include respond-to('tablet') {
+            font-size: 16px;
+            margin: 0 0 25px;
+        }
+    
+        @include respond-to('desktop') {
+            font-size: 20px;
+            margin-bottom: 40px;
+        }
+    }
+
     &__text {
         p {
             font-size: 12px;
             line-height: 18px;
-            padding: 0 0 15px;
             color: $text-dark;
 
             @include respond-to('tablet') {
                 font-size: 14px;
                 line-height: 22px;
-                padding: 0 0 20px;
             }
         
             @include respond-to('desktop') {
                 font-size: 16px;
                 line-height: 24px;
-                padding: 0 0 30px;
             }
         }
     }
